@@ -141,7 +141,7 @@ Total Customers = DISTINCTCOUNT(Sales\[Customer ID])
 
 The Power BI dashboard provides an interactive view of sales performance using KPIs, charts, and slicers.
 
-![Sales Revenue Dashboard](./Screenshot/Sales_Revenue_Dashboard.jpg)
+![Sales Revenue Dashboard](./Screenshots/Sales_Revenue_Dashboard.jpg)
 ## 📁 Project Structure
 
 
