@@ -1,232 +1,150 @@
-\# 📊 Sales \& Revenue Analysis Dashboard
+# 📊 Sales & Revenue Analysis Dashboard
 
+## 📌 Project Overview
 
-
-\## 📌 Project Overview
-
-
-
-This project is an interactive \*\*Sales \& Revenue Analysis Dashboard\*\* built using \*\*Microsoft Power BI\*\*.
-
-
+This project is an interactive **Sales & Revenue Analysis Dashboard** built using **Microsoft Power BI**.
 
 The dashboard analyzes sales data to identify sales trends, top-performing categories, regions, and products. It also provides interactive filters and KPIs to support business analysis and decision-making.
 
+## 🎯 Project Objectives
 
+* Analyze overall sales performance
 
-\## 🎯 Project Objectives
+* Track sales trends over time
 
+* Identify the highest-performing product categories
 
+* Compare sales performance across regions
 
-\* Analyze overall sales performance
+* Identify top-performing products
 
-\* Track sales trends over time
+* Provide interactive filtering using slicers
 
-\* Identify the highest-performing product categories
+* Generate meaningful business insights from sales data
 
-\* Compare sales performance across regions
+## 🛠️ Tools & Technologies
 
-\* Identify top-performing products
+* **Microsoft Power BI Desktop**
 
-\* Provide interactive filtering using slicers
+* **Power Query**
 
-\* Generate meaningful business insights from sales data
+* **DAX**
 
+* **CSV Dataset**
 
+* **GitHub**
 
-\## 🛠️ Tools \& Technologies
+## 📂 Dataset
 
+The project uses a **Superstore Sales Dataset** containing information such as:
 
+* Order Date
 
-\* \*\*Microsoft Power BI Desktop\*\*
+* Ship Date
 
-\* \*\*Power Query\*\*
+* Order ID
 
-\* \*\*DAX\*\*
+* Customer ID
 
-\* \*\*CSV Dataset\*\*
+* Customer Name
 
-\* \*\*GitHub\*\*
+* Category
 
+* Sub-Category
 
+* Product Name
 
-\## 📂 Dataset
+* Region
 
+* State
 
+* City
 
-The project uses a \*\*Superstore Sales Dataset\*\* containing information such as:
-
-
-
-\* Order Date
-
-\* Ship Date
-
-\* Order ID
-
-\* Customer ID
-
-\* Customer Name
-
-\* Category
-
-\* Sub-Category
-
-\* Product Name
-
-\* Region
-
-\* State
-
-\* City
-
-\* Sales
-
-
+* Sales
 
 The dataset was imported into Power BI using a CSV file.
 
+## 🧹 Data Preparation
 
-
-\## 🧹 Data Preparation
-
-
-
-The dataset was prepared using \*\*Power Query\*\*.
-
-
+The dataset was prepared using **Power Query**.
 
 The following checks were performed:
 
+* Checked column quality
 
+* Verified data types
 
-\* Checked column quality
+* Confirmed there were no errors
 
-\* Verified data types
+* Confirmed there were no empty values
 
-\* Confirmed there were no errors
+* Converted date columns to appropriate date types
 
-\* Confirmed there were no empty values
+* Verified numerical and text fields
 
-\* Converted date columns to appropriate date types
+## 📊 Dashboard Features
 
-\* Verified numerical and text fields
+### Key Performance Indicators
 
+* **Total Sales:** 2.26M
 
+* **Total Orders:** 5K
 
-\## 📊 Dashboard Features
+* **Total Customers:** 793
 
+### Visualizations
 
+* Monthly Sales Trend
 
-\### Key Performance Indicators
+* Sales by Category
 
+* Sales by Region
 
+* Top 10 Products by Sales
 
-\* \*\*Total Sales:\*\* 2.26M
+### Interactive Filters
 
-\* \*\*Total Orders:\*\* 5K
+* Category slicer
 
-\* \*\*Total Customers:\*\* 793
+* Region slicer
 
+* Order Date slicer
 
+## 💡 Key Business Insights
 
-\### Visualizations
+1. **Technology is the highest-selling product category.**
 
+2. **The West region generates the highest sales, with total sales of 710.22K.**
 
+3. **Canon imageCLASS 2200 Advanced Copier is the top-performing product by total sales, generating 61,599.82 in sales.**
 
-\* Monthly Sales Trend
+4. **November has the highest monthly sales in the analyzed dataset.**
 
-\* Sales by Category
+## 📈 DAX Measures
 
-\* Sales by Region
+### Total Sales
 
-\* Top 10 Products by Sales
-
-
-
-\### Interactive Filters
-
-
-
-\* Category slicer
-
-\* Region slicer
-
-\* Order Date slicer
-
-
-
-\## 💡 Key Business Insights
-
-
-
-1\. \*\*Technology is the highest-selling product category.\*\*
-
-2\. \*\*The West region generates the highest sales, with total sales of 710.22K.\*\*
-
-3\. \*\*Canon imageCLASS 2200 Advanced Copier is the top-performing product by total sales, generating 61,599.82 in sales.\*\*
-
-4\. \*\*November has the highest monthly sales in the analyzed dataset.\*\*
-
-
-
-\## 📈 DAX Measures
-
-
-
-\### Total Sales
-
-
-
-```DAX
 
 Total Sales = SUM(Sales\[Sales])
 
-```
+### Total Orders
 
-
-
-\### Total Orders
-
-
-
-```DAX
 
 Total Orders = DISTINCTCOUNT(Sales\[Order ID])
 
-```
+### Total Customers
 
-
-
-\### Total Customers
-
-
-
-```DAX
 
 Total Customers = DISTINCTCOUNT(Sales\[Customer ID])
 
-```
-
-
-
-\## 📸 Dashboard Preview
-
-
+## 📸 Dashboard Preview
 
 The Power BI dashboard provides an interactive view of sales performance using KPIs, charts, and slicers.
 
+![Sales Revenue Dashboard](Screenshot/Sales_Revenue_Dashboard.png)
 
+## 📁 Project Structure
 
-!\[Sales Revenue Dashboard](Screenshot/Sales\_Revenue\_Dashboard.png)
-
-
-
-\## 📁 Project Structure
-
-
-
-```text
 
 Sales-Revenue-Analysis
 
@@ -252,49 +170,32 @@ Sales-Revenue-Analysis
 
 └── README.md
 
-```
-
-
-
-\## 🚀 Learning Outcomes
-
-
+## 🚀 Learning Outcomes
 
 Through this project, I practiced:
 
+* Data import and preparation
 
+* Power Query
 
-\* Data import and preparation
+* DAX measures
 
-\* Power Query
+* KPI creation
 
-\* DAX measures
+* Data visualization
 
-\* KPI creation
+* Interactive slicers
 
-\* Data visualization
+* Business insight generation
 
-\* Interactive slicers
+* Dashboard design
 
-\* Business insight generation
+* GitHub project documentation
 
-\* Dashboard design
+## 👩‍💻 Author
 
-\* GitHub project documentation
+**Shresta Rai S.**
 
-
-
-\## 👩‍💻 Author
-
-
-
-\*\*Shresta Rai S.\*\*
-
-
-
-Computer Science \& Engineering
+Computer Science & Engineering
 
 K.V.G. College of Engineering
-
-
-
